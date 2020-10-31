@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_logo_dark0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/register_title"
+            android:paddingBottom="8dp"
+            android:text="@string/register_mobile_no" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etMobileNoLogin"
+            style="@style/register_edit_text_layout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:hint="شماره همراه"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColorHint="@color/gray" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#fff"
+            android:text="Login" />
+
+        <LinearLayout
+            android:id="@+id/llRegisterBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/edit_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/text_view_title"
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/question_register"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvRule"
+                style="@style/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:text="@string/privacy"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvPrivacy"
+                style="@style/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:paddingTop="4dp"
+                android:text="@string/conditions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGuide"
+            style="@style/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/support_merchant_guide"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="24sp"
+        android:src="@drawable/ic_left_arrow"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_register"
+            android:text="@string/register" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/register_title"
+            android:layout_margin="8dp"
+
+            android:paddingBottom="26dp"
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/text_view_title"
+            android:layout_marginRight="16dp"
+            android:text="@string/top_up_phone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etMobileNo"
+            style="@style/register_edit_text_layout"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1" />
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:weightSum="3"-->
+        <!--        android:id="@+id/llRegiste"-->
+        <!--        android:layout_margin="16dp"-->
+        <!--        android:visibility="gone"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnLoginInRegister"-->
+        <!--            style="@style/register_button_layout"-->
+        <!--            android:layout_weight="2"-->
+        <!--            android:textColor="@color/colorPrimary"-->
+        <!--            android:background="@drawable/button_cancel_drawable"-->
+        <!--            android:text="@string/return_" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnRegisterInRegister"-->
+        <!--            style="@style/register_button_layout"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_marginLeft="16dp"-->
+        <!--            android:text="@string/register"-->
+        <!--            android:textColor="@color/white" />-->
+        <!--    </LinearLayout>-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnRegister"-->
+        <!--            style="@style/register_button_layout"-->
+        <!--            android:layout_weight="2"-->
+        <!--            android:background="@drawable/button_cancel_drawable"-->
+        <!--            android:text="@string/register"-->
+        <!--            android:textColor="@color/colorPrimary" />-->
+        <Button
+            android:id="@+id/btnRegister1"
+            style="@style/register_button_layout"
+            android:layout_margin="16dp"
+            android:text="@string/register" />
+
+
+        <LinearLayout
+            android:id="@+id/llLinks1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvPrivacy1"
+                style="@style/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/privacy"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvRule1"
+                style="@style/text_view_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/conditions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
