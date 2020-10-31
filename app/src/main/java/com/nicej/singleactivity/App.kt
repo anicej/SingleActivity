@@ -1,4 +1,4 @@
-package com.nicej.hiltsample
+package com.nicej.singleactivity
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

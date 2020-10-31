@@ -1,6 +1,6 @@
-package com.nicej.hiltsample.hilt
+package com.nicej.singleactivity.hilt
 
-import com.nicej.hiltsample.api.ApiInterface
+import com.nicej.singleactivity.api.ApiInterface
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.nicej.hiltsample.viewModel.MainViewModel
 import com.nicej.singleactivity.R
+import com.nicej.singleactivity.viewModel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_main.*
 
@@ -30,7 +30,7 @@ class MainFragment : Fragment() {
         viewModel.getPhoto(3).observe(viewLifecycleOwner, Observer {
             it?.let {
                 Log.e("TAG", "onViewCreated: ")
-                imageWeb.loadUrl(it.thumbnailUrl)
+                imageweb.loadUrl(it.thumbnailUrl)
             }
         })
 

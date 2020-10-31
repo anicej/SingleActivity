@@ -1,12 +1,12 @@
-package com.nicej.hiltsample.hilt
+package com.nicej.singleactivity.hilt
 
 import android.app.Activity
-import com.nicej.hiltsample.view.MainActivity
+import com.nicej.singleactivity.api.RemoteErrorEmitter
+import com.nicej.singleactivity.view.MainActivity
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
-import ir.sass.hilt_android.api.RemoteErrorEmitter
 
 @Module
 @InstallIn(ActivityComponent::class)

@@ -1,4 +1,4 @@
-package ir.sass.hilt_android.api
+package com.nicej.singleactivity.api
 
 import android.util.Log
 import androidx.lifecycle.LiveData

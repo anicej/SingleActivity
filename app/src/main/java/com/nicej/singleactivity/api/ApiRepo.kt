@@ -1,7 +1,5 @@
-package com.nicej.hiltsample.api
+package com.nicej.singleactivity.api
 
-import ir.sass.hilt_android.api.RemoteErrorEmitter
-import ir.sass.hilt_android.api.apiCall
 import javax.inject.Inject
 
 
