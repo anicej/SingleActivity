@@ -11,13 +11,14 @@ suspend fun rePopulateDb(database: ApplicationsDatabase?) {
 
 
             applicationsDao.deleteAll()
-            val appOne = Applications(title = "Adam McKay", description = "")
-            val appTwo = Applications(title = "Denis Villeneuve", description = "")
-            val appThree = Applications(title = "Morten Tyldum", description = "")
-            val appFour = Applications(title = "The Big Short", description = "")
-            val appFive = Applications(title = "Arrival", description = "")
-            val appSix = Applications(title = "Blade Runner 2049", description = "")
-            applicationsDao.insert(appOne, appTwo, appThree, appFour, appFive, appSix)
+            val appOne = Applications(title = "Adam McKay", description = "", id = 0)
+            val appTwo = Applications(title = "Denis Villeneuve", description = "", id = 1)
+            val appThree = Applications(title = "Morten Tyldum", description = "", id = 2)
+            val appFour = Applications(title = "The Big Short", description = "", id = 3)
+            val appFive = Applications(title = "Arrival", description = "", id = 4)
+            val appSix = Applications(title = "Blade Runner 2049", description = "", id = 5)
+            var list = arrayOf<Applications>(appOne, appTwo, appThree, appFour, appFive, appSix)
+            applicationsDao.insert(list)
         }
     }
 }

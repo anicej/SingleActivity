@@ -29,7 +29,7 @@ android {
     }
     ///
 
-
+    kapt.includeCompileClasspath = false
     buildTypes {
         release {
             minifyEnabled false

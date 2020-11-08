@@ -12,12 +12,7 @@ interface ApplicationsDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(
-        applications: Applications,
-        appTwo: Applications,
-        appThree: Applications,
-        appFour: Applications,
-        appFive: Applications,
-        appSix: Applications
+        applications: Array<Applications>
     ): Long
 
 
